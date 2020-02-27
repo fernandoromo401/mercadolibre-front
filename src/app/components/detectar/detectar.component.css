@@ -1,0 +1,17 @@
+.tamaño{
+    height: 60px;   
+}
+input[type="number"]
+{
+    -webkit-appearance: textfield !important;
+    margin: 0;
+    -moz-appearance:textfield !important;
+}
+.medida{
+    width: 100%;
+}
+.maximo{
+   word-wrap: break-word; 
+   max-width:100%; 
+   width:100%;
+}

@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4"></div>
+        <div class="col-xl-4">
+            <div class="text-center mt-5">
+                <h3>Generar ADN automaticamente</h3>
+                <div class="form-group">
+                    <div class="form-group">
+                        <label class="control-label">Ingresar tamaño de matriz</label>
+                        <div class="form-group">
+                            <div class="input-group mb-3 tamaño-div mt-4">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Tamaño:</span>
+                                </div>
+                                <input [(ngModel)]="adn" type="number" value="{{adn}}" class="form-control tamaño" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">
+                                        <button (click)="generator(adn)" class="btn btn-success">Generar</button>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="maximo">
+                                <p>ADN: <br>{{adnGenerado}}</p>
+                                <button (click)="save(adnGenerado)" class="btn btn-primary medida">Analizar ADN</button>
+                                <hr>
+                                <p>{{respuesta}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4"></div>
+        </div>
+    </div>
+</div>
